@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700');
-
 :root {
     --body-font: 'Lora', serif;
 
@@ -37,7 +35,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 1rem;
+        font-size: 0.9rem;
         font-family: 'Lora', serif;
         line-height: 1.4;
         letter-spacing: 0.6px;
@@ -77,8 +75,8 @@ transition: 1s;
 	}  
 
         .title {
-font-size:1.2rem;
-font-style: italic;
+font-size:1.7rem;
+font-family: 'League Script';
 font-weight: bold;
 letter-spacing:1px;
 text-decoration: none;
@@ -204,9 +202,9 @@ body:has(.about-layout) {
     background-color: #F8F6F4;
     background-clip: border-box;
     padding: 10%;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-family: Lora, serif;  
-    line-height: 1.3em; 
+    line-height: 1.5em; 
     letter-spacing: 0.5px;
     text-align: justify;  
     color: #9e8d8d;  
@@ -228,10 +226,21 @@ body:has(.about-layout) {
     z-index: 12;
 }
 
-.divider {
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
+details>summary {
+  list-style-type: '';
+  cursor: url(img/cursorh.png), progress;
+}
+
+details[open]>summary {
+  list-style-type: '';
+  cursor: url(img/cursorh.png), progress;
+}
+
+details[open]>summary {
+  margin-bottom: 0.5rem;
+}
+
+.wavy {
     text-weight: normal;
     text-decoration-line: underline;
     text-decoration-style: wavy;
@@ -245,7 +254,6 @@ body:has(.about-layout) {
 
 .about-content-box::-webkit-scrollbar-track {
     background-color: transparent;
-    /* Tom rosa-creme claro, como o fundo da página */
     border-radius: 10px;
 }
 
