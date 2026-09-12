@@ -203,7 +203,7 @@ body:has(.about-layout) {
     background-repeat: repeat;
     background-color: #F8F6F4;
     background-clip: border-box;
-    padding: 30px;
+    padding: 10%;
     font-size: 1rem;
     font-family: Lora, serif;  
     line-height: 1.3em; 
@@ -212,32 +212,33 @@ body:has(.about-layout) {
     color: #9e8d8d;  
 }
 
-.teddy-badge {
+.candle {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 25%;
-    height: auto;
-    transform: translate(-25%, -25%) rotate(-10deg);
+    top: 90%;
+    left: 90%;
+    transform: translate(-25%, -25%);
     z-index: 12;
 }
 
-.heart-badge {
+.heart {
     position: absolute;
-    top: 90%;
-    left: 85%;
-    width: 25%;
-    height: auto;
-    transform: translate(-25%, -25%) rotate(10deg);
+    top: 0;
+    left: 0;
+    transform: translate(-25%, -25%);
     z-index: 12;
 }
 
 .divider {
     width: 100%;
-    height: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-weight: normal;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #bfb0b0;
+    text-underline-offset: -3px;
 }
 
-/* Scrollbar decorativa (Chrome/Safari/Edge) */
 .about-content-box::-webkit-scrollbar {
     width: 10px;
 }
