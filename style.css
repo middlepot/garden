@@ -39,7 +39,7 @@ body {
         font-family: 'Lora', serif;
         line-height: 1.4;
         letter-spacing: 0.6px;
-        text-align: justify;
+        text-align: left;
         color: #9e8d8d;
 }
 
@@ -138,24 +138,8 @@ body:has(.about-layout) {
     font-family: Lora, serif;  
     line-height: 1.4em; 
     letter-spacing: 0.5px;
-    text-align: justify;  
+    text-align: left;  
     color: #9e8d8d;  
-}
-
-.candle {
-    position: absolute;
-    top: 90%;
-    left: 90%;
-    transform: translate(-25%, -25%);
-    z-index: 12;
-}
-
-.heart {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-25%, -25%);
-    z-index: 12;
 }
 
 details>summary {
@@ -180,26 +164,14 @@ details[open] {
     border-image-repeat: round;
     background-color: #F8F6F4;
     background-clip: padding-box;
-    padding: 3%;
-}
-
-.side-by-side {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    font-size:0.8rem;
-    line-height: 1.3em; 
+    line-height: 1.4em; 
+    padding: 5%;
 }
 
 .garden {
     display: flex;
-    gap: 10px;
+    flex-wrap: wrap;
 }
-
-.child-box {
-      flex: 1;
-      padding: 10px;
-    }
 
 .about-content-box::-webkit-scrollbar {
     width: 10px;
@@ -222,13 +194,5 @@ details[open] {
 @media (max-width: 768px) {
     .about-center-wrapper {
         top: 10%;
-    }
-
-    .side-by-side {
-    display: inline;
-    align-items: center;
-    gap: 20px;
-    font-size:0.8rem;
-    line-height: 1.3em; 
     }
 }
