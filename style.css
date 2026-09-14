@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 
-:root {
-    --body-font: 'Lora', serif;
-
 html,
 body {
         cursor: url(img/cursor.png), progress;
