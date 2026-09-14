@@ -25,7 +25,6 @@ body {
             color: #cec1bb
         }
 
-
         width: 100%;
         height: 100%;
         overflow: hidden;
@@ -99,30 +98,54 @@ text-shadow: 1px 3px 0 #ded5d5, 1px 8px 5px #ede4e4;
     position: relative;
 }
 
+    .logo-container {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .about-logo {
+        top: 8%;
+        transform: translate(-50%, -50%);
+        z-index: 15;
+    }
+    
+        .fence {
+        position: absolute;
+        margin-top: -20%;
+        left: 50%;
+        transform: translate(-50%, 65%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 0;
+    }
+
 body:has(.about-layout) {
     overflow-y: auto;
     overflow-x: hidden;
 }
 
-.about-logo {
-    top: 18%;
-    transform: translate(-50%, -50%) scale(0.6);
-}
-
 .about-center-wrapper {
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: 10vh;
-    width: 60vh;
+    width: 70vh;
     max-width: 80vw;
     z-index: 10;
 }
 
 .about-content-box {
+    margin-top: 5vh;
     width: 100%;
-    max-height: 80vh;
+    height: 80vh;
     overflow-y: auto;
     scrollbar-color: #e2d5d0 transparent;
     border: 50px solid transparent;
@@ -133,7 +156,7 @@ body:has(.about-layout) {
     background-repeat: repeat;
     background-color: #F8F6F4;
     background-clip: border-box;
-    padding: 5%;
+    padding: 10%;
     font-size: 0.9rem;
     font-family: Lora, serif;  
     line-height: 1.4em; 
@@ -171,6 +194,9 @@ details[open] {
 .garden {
     display: flex;
     flex-wrap: wrap;
+    text-align: left;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .about-content-box::-webkit-scrollbar {
@@ -194,5 +220,23 @@ details[open] {
 @media (max-width: 768px) {
     .about-center-wrapper {
         top: 10%;
+    }
+    .about-content-box {
+        margin-top: 2vh;
+        border: 40px solid transparent;
+        border-image-source: url('img/border.png');
+        border-image-slice: 20% fill;
+        border-image-repeat: round;
+        padding: 5%;
+        padding-top: 20%;
+    }
+    .about-logo {
+        top: 3%;
+        transform: translate(-50%, -50%);
+        z-index: 15;
+    }
+        .fence {
+        margin-top: -38%;
+        transform: translate(-50%, 65%) scale(0.7);
     }
 }
