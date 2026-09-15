@@ -95,6 +95,26 @@ text-shadow: 1px 3px 0 #ded5d5, 1px 8px 5px #ede4e4;
     position: relative;
 }
 
+.side-by-side-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto; 
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 3%;
+    border: 20px solid transparent;
+    border-image-source: url('img/lace.png');
+    border-image-slice: 20% fill;
+    border-image-repeat: round;
+    background-image: url('img/sky.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-clip: padding-box;
+}
+
     .logo-container {
         position: absolute;
         top: 45%;
