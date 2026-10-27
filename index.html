@@ -44,6 +44,24 @@
 
 <br>
 
+ <div class="music-player">
+<button class="music-toggle" aria-label="Play music" type="button">
+    <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M8 5v14l11-7z"/>
+    </svg>
+    <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" hidden>
+      <path d="M6 5h4v14H6zm8 0h4v14h-4z"/>
+    </svg>
+  </button>
+  <input class="music-progress" type="range"
+         min="0" max="100" value="0"
+         aria-label="Music progress">
+  <audio autoplay loop preload="metadata" src="a_curious_garden.mp3"></audio>
+</div> 
+<script src="musicplayer.js"></script>
+
+<br>
+
 <div class="garden">
 <details>
 <summary><img src="img/flowers/flower_twig_1.gif"></summary>
