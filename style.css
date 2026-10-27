@@ -244,7 +244,7 @@ details[open] {
   width: 200px;
   height: 20px;
   padding: 0 10px;
-  background: #f5f3f2;
+  background: #f7f5f3;
   border: 1px dotted #ac9f9f;
   border-radius: 12px;
 }
@@ -258,7 +258,7 @@ details[open] {
   padding: 0;
   border: none;
   background: transparent;
-  color: #d1c0c0;
+  color: #c5bbb6;
   cursor: pointer;
 }
 
@@ -295,7 +295,7 @@ details[open] {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #d1c0c0;
+  background: #c5bbb6;
 }
 
 .music-progress::-moz-range-thumb {
@@ -303,7 +303,7 @@ details[open] {
   height: 6px;
   border: none;
   border-radius: 50%;
-  background: #ccbcba;
+  background: #c5bbb6;
 }
 
 @media (max-width: 768px) {
